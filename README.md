@@ -26,11 +26,11 @@ The main objectives are to:
 
 ## Dataset
 
-The project uses the Loan Prediction dataset containing **614 loan applications**.
+The project uses the Loan Prediction dataset containing 614 loan applications.
 
 The target variable is:
 
-* `Loan_Status` — loan approval outcome.
+* Loan_Status — loan approval outcome.
 
 The dataset contains applicant, financial, and loan-related information, including:
 
@@ -71,14 +71,14 @@ The following preprocessing steps were performed:
 3. **Data type inspection**
    Variable data types were checked to ensure that the data was appropriately structured.
 
-4. **Removal of ****`Loan_ID`**
-   `Loan_ID` was removed because it is an identifier and does not provide meaningful predictive information.
+4. **Removal of Loan_ID**
+   Loan_ID was removed because it is an identifier and does not provide meaningful predictive information.
 
 5. **Categorical encoding**
    Categorical variables were converted into numerical features using one-hot encoding.
 
 6. **Target encoding**
-   `Loan_Status` was converted into a binary target, where `1` represents an approved loan and `0` represents a rejected loan.
+   Loan_Status was converted into a binary target, where 1 represents an approved loan and 0 represents a rejected loan.
 
 7. **Outlier detection**
    Potential outliers were investigated using boxplots and the IQR method. Potentially valid observations were retained rather than automatically removed.
@@ -93,15 +93,15 @@ The following preprocessing steps were performed:
 
 Feature selection was supported by correlation analysis and Random Forest feature importance.
 
-The correlation analysis showed that `ApplicantIncome` and `LoanAmount` had the strongest observed numerical relationship, with a correlation of approximately **0.57**.
+The correlation analysis showed that ApplicantIncome and LoanAmount had the strongest observed numerical relationship, with a correlation of approximately 0.57.
 
 Random Forest feature importance identified the following as the most influential features:
 
-1. `Credit_History`
-2. `ApplicantIncome`
-3. `LoanAmount`
-4. `CoapplicantIncome`
-5. `Loan_Amount_Term`
+1. Credit_History
+2. ApplicantIncome
+3. LoanAmount
+4. CoapplicantIncome
+5. Loan_Amount_Term
 
 These findings indicate that credit history and financial characteristics contain useful information for predicting loan approval.
 
@@ -110,8 +110,8 @@ These findings indicate that credit history and financial characteristics contai
 The analysis produced several important observations:
 
 * The dataset contains both approved and rejected loan applications.
-* `Credit_History` was the most important feature in the Random Forest analysis.
-* `ApplicantIncome` and `LoanAmount` were also among the strongest predictors.
+* Credit_History was the most important feature in the Random Forest analysis.
+* ApplicantIncome and LoanAmount were also among the strongest predictors.
 * Potential outliers were present in several numerical variables.
 * Potentially legitimate extreme observations were retained rather than removed without sufficient evidence.
 * The final feature dataset contains no missing values.
@@ -120,12 +120,12 @@ The analysis produced several important observations:
 
 The final machine-learning-ready dataset contains:
 
-* **614 observations**
-* **14 predictor features**
-* **1 target variable**
-* **0 missing values**
+* 614 observations
+* 14 predictor features
+* 1 target variable
+* 0 missing values
 
-The final dataset contains the encoded predictor variables and the binary `Loan_Status` target.
+The final dataset contains the encoded predictor variables and the binary Loan_Status target.
 
 ## Repository Structure
 
