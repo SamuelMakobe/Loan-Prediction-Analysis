@@ -393,16 +393,30 @@ Loan-Prediction-Analysis/
 │
 ├── README.md
 │
-├── Week_2_loan_prediction_preprocessing.ipynb
-├── Week_3_loan_prediction_analysis.ipynb
+├── notebooks/
+│   ├── Week_2_loan_prediction_preprocessing.ipynb
+│   └── Week_3_loan_prediction_analysis.ipynb
 │
-├── cleaned_loan_prediction.csv
-├── machine_learning_ready_loan_prediction.csv
-├── final_modelling_dataset.csv
+├── datasets/
+│   ├── cleaned_loan_prediction.csv
+│   ├── machine_learning_ready_loan_prediction.csv
+│   └── final_modelling_dataset.csv
 │
-├── Business understanding report-Loan prediction.pdf
-├── Data preprocessing report-Loan prediction.pdf
-└── Business Insights and Recommendations Report.docx
+├── reports/
+│   ├── week_2/
+│   │   ├── Business_understanding_report-Loan_prediction.pdf
+│   │   └── Data_preprocessing_report-Loan_prediction.pdf
+│   │
+│   └── week_3/
+│       ├── Project_Continuity_Summary.pdf
+│       ├── Statistical_Analysis_Summary.pdf
+│       ├── Feature_Engineering_Documentation.pdf
+│       ├── Feature_Evaluation_and_Selection_Summary.pdf
+│       ├── Business_Insights_and_Recommendations_Report.docx
+│       └── Updated_Data_Dictionary.pdf
+│
+└── submission/
+    └── Week_3_Submission_Form.pdf
 ```
 
 ---
